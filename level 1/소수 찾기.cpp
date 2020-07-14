@@ -11,7 +11,7 @@ int solution(int n) {
     
     int root = (int)sqrt(n); // n의 제곱근
     
-    // 에라토스테네스의 체
+    // 에라토스테네스의 채
     for(int i = 2; i <= root; i++) // 2부터 root까지
         if(PrimeNumber[i]) // 소수를 찾으면
             for(int j = i; j * i < n + 1; j++) // 그의 배수들은 false로 입력
