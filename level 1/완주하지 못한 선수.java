@@ -4,7 +4,7 @@ class Solution {
     public String solution(String[] participant, String[] completion) {
         String answer = "";
         
-        // 2중 포문을 사용하지 않기 위해 배열 정렬
+        // 2중 포문을 사용하지 않기 위해서 배열 정렬
         Arrays.sort(participant);
         Arrays.sort(completion);
         
