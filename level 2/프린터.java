@@ -31,7 +31,8 @@ class Solution {
         boolean IsReturned = false; // 원하는 location의 문서가 반환되었는가
         int cnt = 0; // 인쇄된 순서
         
-        while(!IsReturned)
+       
+        while(!IsReturned) // 반환되지 않았다면
         {
             doc tmp = wait.get(0);
 
