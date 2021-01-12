@@ -52,10 +52,7 @@ int solution(string dartResult) {
     
     // 총 점수 계산
     for(int i = 0; i < calc.size(); i++)
-    {
         answer += calc[i];
-        cout << calc[i] << "\n";
-    }
     
     
     return answer;
