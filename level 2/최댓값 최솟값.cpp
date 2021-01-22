@@ -25,7 +25,7 @@ string solution(string s) {
         }
     }
     
-    // 최댓값, 최솟값 찾기
+    // 최댓값, 최솟값 찾기         -----> sort(numbers.begin(), numbers.end())을 사용하면 쉽게 최대,최소 찾기 가능
     int min = numbers[0];
     int max = numbers[0];
     
