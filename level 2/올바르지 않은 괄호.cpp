@@ -9,6 +9,7 @@ bool solution(string s)
     bool answer = true;
     stack<char> stk; // 괄호를 저장할 스택
 
+    
     for(int i = 0; i < s.size(); i++) // 문자열 전체 순회
     {
         if(stk.size() == 0 && s[i] == ')') // 스택이 비어있는데 ')'가 온다면
