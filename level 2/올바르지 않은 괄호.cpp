@@ -13,7 +13,10 @@ bool solution(string s)
     for(int i = 0; i < s.size(); i++) // 문자열 전체 순회
     {
         if(stk.size() == 0 && s[i] == ')') // 스택이 비어있는데 ')'가 온다면
+        {
             answer = false; // 올바르지 않은 괄호
+            break;
+        }
         else if(s[i] == '(') // '('이 온다면
             stk.push('('); // 스택에 입력
         else if(stk.top() == '(' && s[i] == ')') // 스택에 '('이 있고, ')'이 온다면
