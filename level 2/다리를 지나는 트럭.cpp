@@ -22,7 +22,7 @@ int solution(int bridge_length, int weight, vector<int> truck_weights) {
     {
         time++;
         
-        // 다리가 견디는 무게가 현재 무게 + 다음 트럭의 무게보다 적으면
+        // 다리가 견디는 무게가 현재 무게 + 다음 트럭의 무게보다 크면
         if(weight >= current_weight + truck_weights[truck_idx]) 
         {
             current_weight += truck_weights[truck_idx]; // 현재 무게에 추가
