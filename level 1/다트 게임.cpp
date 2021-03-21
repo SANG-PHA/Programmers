@@ -54,6 +54,5 @@ int solution(string dartResult) {
     for(int i = 0; i < calc.size(); i++)
         answer += calc[i];
     
-    
     return answer;
 }
