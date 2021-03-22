@@ -41,3 +41,45 @@ string solution(vector<int> numbers) {
     return answer;
 }
 
+
+
+// sort() 실행 시, 기준이 되는 비교 함수를 재정의.
+
+#include <string>
+#include <vector>
+#include <algorithm>
+#include <iostream>
+
+using namespace std;
+
+// https://mungto.tistory.com/22 참조
+// 합친 문자 비교해서 큰순으로 정렬하기, ex ) 6, 10 이 있다면 610과 106하고 어떤게 큰지 비교
+// 610이 더크므로 6, 10순으로 정렬하게 된다.
+bool cmp(string a, string b) 
+{
+    return a + b > b + a;
+}
+ 
+string solution(vector<int> numbers) {
+    string answer = "";
+    
+    vector<string> temp;
+    
+    //string으로 바꾼후 벡터에 집어넣는다.
+    for (auto num : numbers)
+        temp.push_back(to_string(num));
+    
+    //더할때 오름차순으로 정렬한다.
+    sort(temp.begin(), temp.end(), cmp);
+    
+    //처음 숫자가 0이라면 0을 반환 => 앞서 정의한 cmp함수에 의해 0이 맨 뒤에 위치한다.
+    if (temp[0] == "0")        
+        return "0";
+    
+    //처음부터 끝까지 문자열 합치고 리턴
+    for (auto num : temp)
+    {
+        answer += num;
+    }
+    return answer;
+}
