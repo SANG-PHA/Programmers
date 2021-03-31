@@ -25,6 +25,7 @@ int solution(int n) {
     for(int i = 0; i <= powN; i++)
         ternary.push_back(0);
     
+    
     int idx = 0;
     // 3진법 벡터 구성
     while(num >= 1)
