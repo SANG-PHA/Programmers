@@ -56,6 +56,5 @@ int solution(string s) {
         while(!stk.empty())
             stk.pop();
     }
-    
     return answer;
 }
