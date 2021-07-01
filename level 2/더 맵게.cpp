@@ -1,6 +1,5 @@
 //      효율성 테스트를 통과하지 못한 코드
 
-
 #include <string>
 #include <vector>
 #include <algorithm>
