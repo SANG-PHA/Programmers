@@ -1,5 +1,5 @@
 // 재귀함수 버전
-// 
+// 시간 
 
 #include <iostream>
 #include <vector>
@@ -83,4 +83,28 @@ void warp(int n, info tmp)
         jump(n, tmp);
         warp(n, tmp);
     }
+}
+
+
+
+// 이진수로 나타냈을 때, 1의 갯수를 새면
+// 그것이 바로 점프한 거리
+// 즉, 배터리 사용량
+
+#include <iostream>
+
+using namespace std;
+    
+int solution(int n)
+{
+    int cnt = 0;
+    
+    while(n > 0)
+    {
+        if(n % 2 == 1)
+            cnt++;
+        n /= 2;
+    }
+    
+    return cnt;
 }
