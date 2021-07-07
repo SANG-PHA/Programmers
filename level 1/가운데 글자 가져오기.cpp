@@ -13,6 +13,7 @@ string solution(string s) {
         answer += s[size - 1];
         answer += s[size];
     }        
+    
     else // 홀수일 때
         answer += (s[size]);
     
