@@ -14,6 +14,7 @@ vector<int> solution(int brown, int yellow) {
         return answer;
     }
     
+    
     // 그 외의 경우
     for(int i = 1; i <= yellow; i++) // 완전탐색으로 약수를 찾는다
     {
