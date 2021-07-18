@@ -14,6 +14,7 @@ string solution(string s) {
         answer += s[size];
     }        
     
+    
     else // 홀수일 때
         answer += (s[size]);
     
