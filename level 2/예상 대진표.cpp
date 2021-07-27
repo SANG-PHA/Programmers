@@ -40,8 +40,8 @@ int solution(int n, int a, int b)
                 idx.push_back(table[j+1]);
         }
     
-        table.clear();
         // 진 사람 제거
+        table.clear();
         for(int j = 0; j < idx.size(); j++)
             table.push_back(idx[j]);
         
