@@ -133,6 +133,7 @@ vector<int> solution(vector<vector<string>> places) {
                     }
                 }
             }
+            
             if(isOver)
                 break;
         }
