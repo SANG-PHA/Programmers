@@ -44,7 +44,6 @@ int gcd(int w, int h){
         w = h;
         h = c;
     }
-    
     return w;
 }
 
