@@ -5,7 +5,6 @@
 
 using namespace std;
 
-
 int search(string word, string check, char appended, int depth, int& answer, bool& isOver, vector<char> chars)
 {
     // 종료 조건
