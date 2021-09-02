@@ -49,3 +49,35 @@ int solution(string word) {
     return answer;
 }
 
+
+// DFS 완전탐색으로 다시 구성
+#include <string>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+void DFS(string s, vector<string>& dict){
+    if(s.size() == 5)
+        return;
+    
+    for(auto c : string("AEIOU"))
+    {
+        string tmp = s + c;
+        dict.push_back(tmp);
+        DFS(tmp, dict);
+    }
+}
+
+
+int solution(string word) {
+    int answer = 0;
+    vector<string> dict;
+    
+    DFS("", dict);
+    sort(dict.begin(), dict.end());
+    answer = lower_bound(dict.begin(), dict.end(), word) - dict.begin() + 1;
+    
+    return answer;
+}
